@@ -5,11 +5,7 @@ FROM golang:1.14-alpine
 
 # @see https://stackoverflow.com/questions/40944479
 # @see https://wiki.alpinelinux.org/wiki/Docker#Installation
-# @see https://github.com/nodejs/docker-node/issues/586
-RUN apk add bash docker git openssh
-
-# copy ssh-config
-COPY ssh-config /root/.ssh-config
+RUN apk add bash docker
 
 # we use this all the time, so try to get a nice looking bash
 COPY bashrc /root/.bashrc

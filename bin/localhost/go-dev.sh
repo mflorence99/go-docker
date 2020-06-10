@@ -14,6 +14,8 @@ if [ "$running" != "true" ]; then
     -e HELLO_CONFIG="$HELLO_CONFIG" \
     -e HELLO_SECRET="$HELLO_SECRET" \
     -e HTTP_CONFIG="$HTTP_CONFIG" \
+    -e HTTP_HOST="go-dev.dev.net" \
+    -e HTTP_PORT="$HTTP_PORT" \
     -e HTTP_SECRET="$HTTP_SECRET" \
     -e MYSQL_DATABASE="$MYSQL_DATABASE" \
     -e MYSQL_HOST="$MYSQL_HOST" \
@@ -22,7 +24,7 @@ if [ "$running" != "true" ]; then
     -e MYSQL_PASSWORD="$MYSQL_PASSWORD" \
     -h localhost \
     -it \
-    -p 5000:5000 \
+    -p 55000-55009:5000-5009 \
     -v $HOME/.ssh:/root/.ssh-orig \
     -v $HOME/.gitconfig:/root/.gitconfig \
     -v $DEV_DIR:/go-dev \

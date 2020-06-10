@@ -1,7 +1,7 @@
 export DOCKER_PASSWORD=unclebob
 
-export HELLO_SECRET=hello-secret
+export HELLO_SECRET=dev-hello-secret
 
-export HTTP_SECRET=http-secret
+export HTTP_SECRET=dev-http-secret
 
 export MYSQL_PASSWORD=beerhunter
